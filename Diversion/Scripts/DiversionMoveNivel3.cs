@@ -28,7 +28,7 @@ public class DiversionMoveNivel3 : MonoBehaviour
     }*/
 
     //PISTA
-    float speed = 12f;
+    float speed = 8f;
     int part=1;
 
     Vector3 pivotPoint= new Vector3(0.0f,0.0f, 0.0f);
@@ -38,6 +38,10 @@ public class DiversionMoveNivel3 : MonoBehaviour
     float velocidadY = 1.6f;
     float velocidadZ = 4.4f;// Velocidad de movimiento
     public Text answer;
+    public GameObject general_camera;
+    public GameObject elevator;
+
+
 
     private void Update()
     {
@@ -77,15 +81,20 @@ public class DiversionMoveNivel3 : MonoBehaviour
             }
         }
 
-//ELEVADOR
+        //ELEVADOR
         if(transform.position.z==-177 && part==4){
-            transform.Translate(-Vector3.up * speed * Time.deltaTime);
+            //ARRIBA
+            if(general_camera.transform.rotation.x < 0){
+                transform.Translate(-Vector3.up * speed * Time.deltaTime);
+                elevator.transform.Translate(Vector3.up * speed * Time.deltaTime);
+
                 if(transform.position.y<6){
                     part=5;
                     Vector3 newPosition = transform.position;
                     newPosition.y=6f;
                     transform.position = newPosition;
                 }
+            }
         }
 
         if(transform.position.z>-257 && part==5 && Variables_Diversion.instance.status=="Start"){
