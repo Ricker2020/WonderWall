@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DiversionMoveNivel3 : MonoBehaviour
 {
@@ -27,15 +28,16 @@ public class DiversionMoveNivel3 : MonoBehaviour
     }*/
 
     //PISTA
-    float speed = 5f;
+    float speed = 12f;
     int part=1;
 
     Vector3 pivotPoint= new Vector3(0.0f,0.0f, 0.0f);
     float rotationSpeed = 20f; // Velocidad de rotación en grados por segundo
     
     //PISTA - DECENSO
-    float velocidadY = 0.4f;
-    float velocidadZ = 1.1f; // Velocidad de movimiento
+    float velocidadY = 1.6f;
+    float velocidadZ = 4.4f;// Velocidad de movimiento
+    public Text answer;
 
     private void Update()
     {
@@ -65,26 +67,91 @@ public class DiversionMoveNivel3 : MonoBehaviour
                 }
         }
 
-        if(transform.position.z>-172 && part==3 && Variables_Diversion.instance.status=="Start"){
+        if(transform.position.z>-177 && part==3 && Variables_Diversion.instance.status=="Start"){
             transform.Translate(-1.0f*Vector3.forward *speed * Time.deltaTime, Space.Self);
-            if(transform.position.z<-172){
+            if(transform.position.z<-177){
                 part=4;
                 Vector3 newPosition = transform.position;
-                newPosition.z = -172f;
+                newPosition.z = -177f;
                 transform.position = newPosition;
             }
         }
 
-        if(transform.position.z>-237 && part==4){
-            transform.Translate(-Vector3.up * velocidadY * Time.deltaTime);
-            transform.Translate(-Vector3.forward * velocidadZ * Time.deltaTime);
-                if(transform.position.z<-237){
+//ELEVADOR
+        if(transform.position.z==-177 && part==4){
+            transform.Translate(-Vector3.up * speed * Time.deltaTime);
+                if(transform.position.y<6){
                     part=5;
                     Vector3 newPosition = transform.position;
-                    newPosition.z = -237f;
+                    newPosition.y=6f;
                     transform.position = newPosition;
                 }
         }
+
+        if(transform.position.z>-257 && part==5 && Variables_Diversion.instance.status=="Start"){
+            transform.Translate(-1.0f*Vector3.forward *speed * Time.deltaTime, Space.Self);
+            if(transform.position.z<-257){
+                part=6;
+                Vector3 newPosition = transform.position;
+                newPosition.z = -257f;
+                transform.position = newPosition;
+            }
+        }
+
+        if(part==6 && Variables_Diversion.instance.status=="Start"){
+            // Calcula el ángulo de rotación basado en el ángulo fijo y la velocidad de rotación
+            float angleToRotate =  rotationSpeed*Time.deltaTime;
+            // Rota el objeto alrededor del punto de pivote en el eje Y
+            transform.RotateAround(pivotPoint, -Vector3.up, angleToRotate);
+            Vector3 rotationEulerAngles = transform.rotation.eulerAngles;
+            answer.text=":"+rotationEulerAngles.x+":"+rotationEulerAngles.y+":"+rotationEulerAngles.z;
+
+            if(rotationEulerAngles.y<270.0f ){
+                part=7;
+                Vector3 newRotation = new Vector3(rotationEulerAngles.x, 270.0f, rotationEulerAngles.z);
+                transform.rotation = Quaternion.Euler(newRotation);
+            }
+        }
+
+        if(part==7 && Variables_Diversion.instance.status=="Start"){
+            transform.Translate(1.0f*Vector3.left *speed * Time.deltaTime, Space.Self);
+
+            if(transform.position.z<-52.5){
+                part=8;
+                Vector3 newPosition = transform.position;
+                newPosition.z = -52.5f;
+                transform.position = newPosition;
+            }
+        }
+
+
+
+        if(part==8 && Variables_Diversion.instance.status=="Start"){
+            // Calcula el ángulo de rotación basado en el ángulo fijo y la velocidad de rotación
+            float angleToRotate =  rotationSpeed*Time.deltaTime;
+            // Rota el objeto alrededor del punto de pivote en el eje Y
+            transform.RotateAround(pivotPoint, Vector3.up, angleToRotate);
+            Vector3 rotationEulerAngles = transform.rotation.eulerAngles;
+            answer.text=":"+rotationEulerAngles.x+":"+rotationEulerAngles.y+":"+rotationEulerAngles.z;
+
+            if(rotationEulerAngles.y>359.5f ){
+                part=9;
+                Vector3 newRotation = new Vector3(rotationEulerAngles.x, 359.5f, rotationEulerAngles.z);
+                transform.rotation = Quaternion.Euler(newRotation);
+            }
+        }
+
+
+        if(transform.position.z>-313 && part==9 && Variables_Diversion.instance.status=="Start"){
+            transform.Translate(-1.0f*Vector3.forward *speed * Time.deltaTime, Space.Self);
+            if(transform.position.z<-313){
+                part=10;
+                Vector3 newPosition = transform.position;
+                newPosition.z = -313f;
+                transform.position = newPosition;
+            }
+        }
+
         if(Variables_Diversion.instance.collision){
             Vector3 newPosition = transform.position;
             newPosition.x = 0;
