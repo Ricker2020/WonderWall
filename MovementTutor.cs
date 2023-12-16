@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class MovementTutor : MonoBehaviour
 {
-    public int movement=0; /* To change*/
-    private int movCurrent=0;
+    public int movCurrent=0; /* To change*/
+
 
     private Animator animator;
     public RuntimeAnimatorController[] movementController;
@@ -13,14 +13,14 @@ public class MovementTutor : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        animator.runtimeAnimatorController = movementController[movement];
+        animator.runtimeAnimatorController = movementController[Variables_Game.instance.movement_tutor];
     }
 
     void Update()
     {
-        if(movCurrent!=movement){
-            animator.runtimeAnimatorController = movementController[movement];
-            movCurrent=movement;
+        if(movCurrent!=Variables_Game.instance.movement_tutor){
+            movCurrent=Variables_Game.instance.movement_tutor;
+            animator.runtimeAnimatorController = movementController[Variables_Game.instance.movement_tutor];
         }
         
     }

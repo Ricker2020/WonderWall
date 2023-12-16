@@ -37,6 +37,9 @@ public class Variables_Game : MonoBehaviour
 
     //Speed
     public string increment_speed="x1.00";
+
+    //Tutorial TUTOR
+    public int movement_tutor=0;
     
 
 
