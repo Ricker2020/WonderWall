@@ -9,6 +9,7 @@ public class WriteText : MonoBehaviour
     public GameObject nextStep;
 
     public float velocidadMostrar = 20f;
+    public float cooldown = 5.0f;
 
 
     public Text miTexto;
@@ -27,6 +28,8 @@ public class WriteText : MonoBehaviour
         }
         /*nextStep.gameObject.SetActive(true);
         gameObject.SetActive(false);*/
+        
+        yield return new WaitForSeconds(cooldown);
         miTexto.gameObject.SetActive(false);
         if(nextStep){
             nextStep.gameObject.SetActive(true);
