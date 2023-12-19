@@ -1156,7 +1156,7 @@ MonoBehaviour:
   nuevoTexto: "CADA CIERTO TIEMPO APARECE UNA PARED CON 2 PUERTAS QUE REPRESENTAN
     UNA RESPUESTA CORRECTA Y UNA INCORRECTA, DEBERAS ESCOGER LA CORRECTA. \xBFY LAS
     PREGUNTAS?  PUES... APARECEN ANTES DE CADA PARED "
-  nextStep: {fileID: 0}
+  nextStep: {fileID: 240954278}
   velocidadMostrar: 20
   cooldown: 5
   miTexto: {fileID: 510040815}
@@ -1961,6 +1961,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   door: {fileID: 692320835480794970, guid: 60dcce77fd3dd1049861b2651697a940, type: 3}
   cant_questions: 4
+  cooldownTime: 5
 --- !u!1 &245301262
 GameObject:
   m_ObjectHideFlags: 0

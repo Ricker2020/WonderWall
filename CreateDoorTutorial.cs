@@ -9,11 +9,9 @@ public class CreateDoorTutorial : MonoBehaviour
     int position_data_questions=0;
     List<ObjectData> data_current;
     List<string> bad_answer; 
-    float timeToCreate=13.0f; //10
-
     public int cant_questions;
 
-
+    public float cooldownTime = 5.0f;
 
 
 
@@ -28,10 +26,10 @@ public class CreateDoorTutorial : MonoBehaviour
         cant_questions=data_current.Count;
 
         bad_answer=new List<string>();
-        bad_answer.Add("2");
-        bad_answer.Add("1");
-        bad_answer.Add("4");
-        bad_answer.Add("3");
+        bad_answer.Add("5");
+        bad_answer.Add("6");
+        bad_answer.Add("7");
+        bad_answer.Add("8");
 
     }
 
@@ -41,7 +39,8 @@ public class CreateDoorTutorial : MonoBehaviour
         if (cooldown && position_data_questions < cant_questions)
         {
             cooldown = false;
-            Invoke("cooldown_activate", timeToCreate);
+            
+            StartCoroutine(cooldown_activate());
         }
         //FIN DE PARTIDA
         if (position_data_questions == cant_questions)
@@ -51,20 +50,18 @@ public class CreateDoorTutorial : MonoBehaviour
         }
 
     }
-    void cooldown_activate()
+    IEnumerator cooldown_activate()
     {
+        yield return new WaitForSeconds(cooldownTime);
         cooldown = true;
         GameObject instantiatedDoor = Instantiate(door);
         DoorAction doorScript = instantiatedDoor.GetComponent<DoorAction>();
         doorScript.text_question = data_current[position_data_questions].question;
 
-        doorScript.speed = 2.0f;
+        doorScript.speed = 1.0f;
 
 
-        System.Random random2 = new System.Random();
-
-        int randomIndex2 = random2.Next(0, 10);
-        if (randomIndex2 < 5)
+        if (position_data_questions==1 || position_data_questions==3)
         {
             doorScript.text_answer1 = data_current[position_data_questions].answer;
             doorScript.text_answer2 = bad_answer[position_data_questions];
