@@ -40,6 +40,9 @@ public class Variables_Game : MonoBehaviour
     //Tutorial
     public int movement_tutor=0;
     public int movement_player=0; //1,2,3,4
+
+    //Directions
+    public int direction_arrow=0;
     
     
     

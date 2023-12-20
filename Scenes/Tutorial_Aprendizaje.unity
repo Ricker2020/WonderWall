@@ -5670,7 +5670,7 @@ MonoBehaviour:
   arrow3: {fileID: 2073345946}
   arrow3_select: {fileID: 1467193954}
   arrow4: {fileID: 1650444291}
-  arrow5_select: {fileID: 2091422127}
+  arrow4_select: {fileID: 2091422127}
 --- !u!1 &540784431
 GameObject:
   m_ObjectHideFlags: 0
@@ -5740,7 +5740,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132149579248912}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 05d150c87542b6740ae298b3107b2fc1, type: 3}
   m_Name: 
@@ -16432,7 +16432,7 @@ PrefabInstance:
     - target: {fileID: 1473853310043872528, guid: b477ce247dd630546b38e2cddec3f199,
         type: 3}
       propertyPath: status
-      value: Wait
+      value: Start
       objectReference: {fileID: 0}
     - target: {fileID: 1473853310043872528, guid: b477ce247dd630546b38e2cddec3f199,
         type: 3}

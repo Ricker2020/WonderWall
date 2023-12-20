@@ -57,10 +57,12 @@ public class PlayerMovement : MonoBehaviour
                 //DERECHA
                 if(general_camera.transform.rotation.z < 0){
                     transform.position+=-transform.right* speedPlayer * Time.deltaTime*Variables_Game.instance.player_direction;
+                    Variables_Game.instance.direction_arrow=2;
                 }
                 //IZQUIERDA
                 else{
                     transform.position+=transform.right* speedPlayer * Time.deltaTime*Variables_Game.instance.player_direction;
+                    Variables_Game.instance.direction_arrow=1;
                 }
 
             }else{
@@ -74,6 +76,7 @@ public class PlayerMovement : MonoBehaviour
                     if(general_camera.transform.rotation.z > 0 && Variables_Game.instance.player_direction==1 ){
                         transform.position+=transform.right* speedPlayer * Time.deltaTime;
                     }
+                    Variables_Game.instance.direction_arrow=1;
                     
                 //DERECHA
                 } else if(transform.position.x >= 4) {
@@ -85,6 +88,7 @@ public class PlayerMovement : MonoBehaviour
                     if(general_camera.transform.rotation.z < 0 && Variables_Game.instance.player_direction==1 ){
                         transform.position+=-transform.right* speedPlayer * Time.deltaTime;
                     }
+                    Variables_Game.instance.direction_arrow=2;
                     
                 }
             }
