@@ -10,6 +10,7 @@ public class DoorAction : MonoBehaviour
     public Text answer1;
     public Text answer2;
     public Text feedback;
+    public bool final_selection=false; //
     public Image background_feedback;
     // Accede al componente Image
     Image image;
@@ -96,6 +97,7 @@ public class DoorAction : MonoBehaviour
                     int score_aux=100 + (50*Variables_Game.instance.combo_in_score);
                     Variables_Game.instance.current_score+=score_aux;
                     text_feedback="Genial!!! La respuesta que elegiste es correcta +"+score_aux;
+                    final_selection=true;
                     image.color = goodColor;
             }else{
                 //Significa que escoge la answer1
@@ -105,11 +107,13 @@ public class DoorAction : MonoBehaviour
                         int score_aux=100 + (50*Variables_Game.instance.combo_in_score);
                         Variables_Game.instance.current_score+=score_aux;
                         text_feedback="Genial!!! La respuesta que elegiste es correcta +"+score_aux;
+                        final_selection=true;
                         image.color = goodColor;
                     }
                     else{
                         Variables_Game.instance.combo_in_score=-1;
                         text_feedback="La respuesta que elegiste no es correcta. La respuesta era: "+text_answer2;
+                        final_selection=false;
                         image.color = badColor;
                     }
 
@@ -121,10 +125,12 @@ public class DoorAction : MonoBehaviour
                         int score_aux=100 + (50*Variables_Game.instance.combo_in_score);
                         Variables_Game.instance.current_score+=score_aux;
                         text_feedback="Genial!!! La respuesta que elegiste es correcta +"+score_aux;
+                        final_selection=true;
                         image.color = goodColor;
                     }else{
                         Variables_Game.instance.combo_in_score=-1;
                         text_feedback="La respuesta que elegiste no es correcta. La respuesta era: "+text_answer1;
+                        final_selection=false;
                         image.color = badColor;
                     }
                 }

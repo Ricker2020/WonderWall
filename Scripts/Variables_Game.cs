@@ -24,7 +24,6 @@ public class Variables_Game : MonoBehaviour
     public int cantQuestions=1;
 
     //GAME: WAIT, START, END
-    //public bool endGame=false;
     public string status="Wait";
 
     //MODIFICATE THEME
@@ -38,8 +37,11 @@ public class Variables_Game : MonoBehaviour
     //Speed
     public string increment_speed="x1.00";
 
-    //Tutorial TUTOR
+    //Tutorial
     public int movement_tutor=0;
+    public int movement_player=0; //1,2,3,4
+    
+    
     
 
 

@@ -1,31 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CreateDoorTutorial : MonoBehaviour
 {
     public GameObject door;
     bool cooldown = true;
-    int position_data_questions=0;
+    int position_data_questions = 0;
     List<ObjectData> data_current;
-    List<string> bad_answer; 
+    List<string> bad_answer;
     public int cant_questions;
 
-    public float cooldownTime = 5.0f;
-
-
+    public float cooldownTime = 7.0f;
 
 
     void Start()
     {
-        data_current=new List<ObjectData>();
-        data_current.Add(new ObjectData("Uno", "1"));
-        data_current.Add(new ObjectData("Dos", "2"));
-        data_current.Add(new ObjectData("Tres", "3"));
-        data_current.Add(new ObjectData("Cuatro", "4"));
-        cant_questions=data_current.Count;
+        data_current = new List<ObjectData>();
+        data_current.Add(new ObjectData("¿Cúal es el número Uno?", "1"));
+        data_current.Add(new ObjectData("¿Cúal es el número Dos?", "2"));
+        data_current.Add(new ObjectData("¿Cúal es el número Tres?", "3"));
+        data_current.Add(new ObjectData("¿Cúal es el número Cuatro?", "4"));
+        cant_questions = data_current.Count;
 
-        bad_answer=new List<string>();
+        bad_answer = new List<string>();
         bad_answer.Add("5");
         bad_answer.Add("6");
         bad_answer.Add("7");
@@ -39,8 +38,9 @@ public class CreateDoorTutorial : MonoBehaviour
         if (cooldown && position_data_questions < cant_questions)
         {
             cooldown = false;
-            
+
             StartCoroutine(cooldown_activate());
+    
         }
         //FIN DE PARTIDA
         if (position_data_questions == cant_questions)
@@ -52,16 +52,13 @@ public class CreateDoorTutorial : MonoBehaviour
     }
     IEnumerator cooldown_activate()
     {
-        yield return new WaitForSeconds(cooldownTime);
-        cooldown = true;
+
         GameObject instantiatedDoor = Instantiate(door);
         DoorAction doorScript = instantiatedDoor.GetComponent<DoorAction>();
         doorScript.text_question = data_current[position_data_questions].question;
+        doorScript.speed = 0.5f;
 
-        doorScript.speed = 1.0f;
-
-
-        if (position_data_questions==1 || position_data_questions==3)
+        if (position_data_questions == 1 || position_data_questions == 3)
         {
             doorScript.text_answer1 = data_current[position_data_questions].answer;
             doorScript.text_answer2 = bad_answer[position_data_questions];
@@ -74,10 +71,12 @@ public class CreateDoorTutorial : MonoBehaviour
             doorScript.text_answer2 = data_current[position_data_questions].answer;
             doorScript.position_correct = 2;
         }
-
-
         position_data_questions += 1;
         //progressBar.UpdateProgressBar(position_data_questions, cant_questions);
+
+        yield return new WaitForSeconds(cooldownTime);
+        cooldown = true;
+
     }
 
 }
