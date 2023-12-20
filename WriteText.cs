@@ -13,6 +13,7 @@ public class WriteText : MonoBehaviour
 
 
     public Text miTexto;
+    public bool disableObject=false;
 
     void Start()
     {
@@ -30,10 +31,18 @@ public class WriteText : MonoBehaviour
         gameObject.SetActive(false);*/
         
         yield return new WaitForSeconds(cooldown);
-        miTexto.gameObject.SetActive(false);
+        
         if(nextStep){
             nextStep.gameObject.SetActive(true);
         }
+        if(disableObject){
+            gameObject.SetActive(false);
+        }
+        else{
+            miTexto.gameObject.SetActive(false);
+
+        }
+        
         
     }
 

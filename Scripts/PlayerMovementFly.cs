@@ -57,10 +57,12 @@ public class PlayerMovementFly : MonoBehaviour
                 //ARRIBA
                 if(general_camera.transform.rotation.x < 0){
                     transform.position+=transform.up* speedPlayer * Time.deltaTime*Variables_Game.instance.player_direction;
+                    Variables_Game.instance.direction_arrow=3;
                 }
                 //ABAJO
                 else{
                     transform.position+=-transform.up* speedPlayer * Time.deltaTime*Variables_Game.instance.player_direction;
+                    Variables_Game.instance.direction_arrow=4;
                 }
 
             }else{
@@ -69,12 +71,14 @@ public class PlayerMovementFly : MonoBehaviour
                     transform.position = new Vector3(transform.position.x, (float)-3, transform.position.z);
                     //ARRIBA
                     transform.position+=transform.up* speedPlayer * Time.deltaTime*Variables_Game.instance.player_direction;
+                    Variables_Game.instance.direction_arrow=4;
                     
                 //ARRIBA
                 } else if(transform.position.y >= 3) {
                     transform.position = new Vector3(transform.position.x, (float)3, transform.position.z);
                     //ABAJO
                     transform.position+=-transform.up* speedPlayer * Time.deltaTime*Variables_Game.instance.player_direction;
+                    Variables_Game.instance.direction_arrow=3;
                     
                 }
             }
