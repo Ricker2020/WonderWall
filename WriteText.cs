@@ -22,6 +22,8 @@ public class WriteText : MonoBehaviour
 
     IEnumerator MostrarTexto()
     {
+        miTexto.gameObject.SetActive(true);
+        miTexto.text="";
         for (int i = 0; i < nuevoTexto.Length; i++)
         {
             miTexto.text += nuevoTexto[i];
