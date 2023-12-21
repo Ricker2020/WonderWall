@@ -10,7 +10,8 @@ public class DiversionCrearFiguras : MonoBehaviour
     public GameObject [] objetos;
     
     bool cooldown=true;
-    float timeToCreate=5.0f;
+    public float timeToCreate=5.0f;
+    int cantidad=0;
     
     void Start()
     {
@@ -32,6 +33,11 @@ public class DiversionCrearFiguras : MonoBehaviour
     {
         if(cooldown && Variables_Diversion.instance.status!="End"){ 
             cooldown=false;
+            cantidad=cantidad+1;
+            if (cantidad % 10 == 0 && timeToCreate > 3.0f)
+            {
+                timeToCreate = timeToCreate - 0.3f;
+            }
             Invoke("cooldown_activate", timeToCreate);
         }
     }
