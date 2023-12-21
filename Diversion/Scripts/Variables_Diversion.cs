@@ -48,6 +48,7 @@ public class Variables_Diversion : MonoBehaviour
     //public string increment_speed="x1.00";
     //Tutorial
     public int direction_arrow=0;
+    public int movement_tutor=0;
 
     private void Awake(){
         if(instance==null){
