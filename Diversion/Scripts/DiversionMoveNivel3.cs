@@ -5,29 +5,9 @@ using UnityEngine.UI;
 
 public class DiversionMoveNivel3 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-/*
-    public float velocidadY = 0.8f;
-    public float velocidadZ = 1f; // Velocidad de movimiento
-    public float anguloY = 15f; // Ángulo en grados
-    public float anguloZ = 15f;
-
-    private void Update()
-    {
-        // Calcula la dirección en el eje Y basada en el ángulo
-        Vector3 direccionY = Quaternion.Euler(0f, anguloY, 0f) * Vector3.up ;
-        Vector3 direccionZ = Quaternion.Euler(0f, 0f, anguloZ) * Vector3.forward;
-
-        // Mueve el objeto en la dirección calculada
-        transform.Translate(direccionY * velocidadY * Time.deltaTime);
-        transform.Translate(-direccionZ * velocidadZ * Time.deltaTime);
-    }*/
-
+   
     //PISTA
+    public GameObject player;
     float speed = 8f;
     int part=1;
 
@@ -83,17 +63,23 @@ public class DiversionMoveNivel3 : MonoBehaviour
 
         //ELEVADOR
         if(transform.position.z==-177 && part==4){
+            PlayerMovementDiversion playerScript = player.GetComponent<PlayerMovementDiversion>();
+            playerScript.enabled = false;
             //ARRIBA
             if(general_camera.transform.rotation.x < 0){
-                transform.Translate(-Vector3.up * speed * Time.deltaTime);
-                elevator.transform.Translate(Vector3.up * speed * Time.deltaTime);
+                Variables_Diversion.instance.direction_arrow=3;
+                transform.Translate(-Vector3.up * speed/5 * Time.deltaTime);
+                elevator.transform.Translate(Vector3.up * speed/5 * Time.deltaTime);
 
                 if(transform.position.y<6){
                     part=5;
                     Vector3 newPosition = transform.position;
                     newPosition.y=6f;
                     transform.position = newPosition;
+                    playerScript.enabled = true;
                 }
+            }else{
+                Variables_Diversion.instance.direction_arrow=4;
             }
         }
 

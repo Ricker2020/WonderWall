@@ -28,10 +28,12 @@ public class PlayerMovementDiversion : MonoBehaviour
                 //DERECHA
                 if(general_camera.transform.rotation.z < 0){
                     transform.position+=-transform.right* speedPlayer * Time.deltaTime*Variables_Diversion.instance.player_direction;
+                    Variables_Diversion.instance.direction_arrow=2;
                 }
                 //IZQUIERDA
                 else{
                     transform.position+=transform.right* speedPlayer * Time.deltaTime*Variables_Diversion.instance.player_direction;
+                    Variables_Diversion.instance.direction_arrow=1;
                 }
 
             }else{
@@ -45,6 +47,7 @@ public class PlayerMovementDiversion : MonoBehaviour
                     if(general_camera.transform.rotation.z > 0 && Variables_Diversion.instance.player_direction==1 ){
                         transform.position+=transform.right* speedPlayer * Time.deltaTime;
                     }
+                    Variables_Diversion.instance.direction_arrow=1;
                     
                 //DERECHA
                 } else if(transform.position.x >= 4) {
@@ -56,6 +59,7 @@ public class PlayerMovementDiversion : MonoBehaviour
                     if(general_camera.transform.rotation.z < 0 && Variables_Diversion.instance.player_direction==1 ){
                         transform.position+=-transform.right* speedPlayer * Time.deltaTime;
                     }
+                    Variables_Diversion.instance.direction_arrow=2;
                     
                 }
             }
