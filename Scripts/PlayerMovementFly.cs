@@ -56,12 +56,12 @@ public class PlayerMovementFly : MonoBehaviour
             if((transform.position.y <3 && transform.position.y >-3)){
                 //ARRIBA
                 if(general_camera.transform.rotation.x < 0){
-                    transform.position+=transform.up* speedPlayer * Time.deltaTime*Variables_Game.instance.player_direction;
+                    transform.position+=transform.up* speedPlayer * Time.deltaTime;
                     Variables_Game.instance.direction_arrow=3;
                 }
                 //ABAJO
                 else{
-                    transform.position+=-transform.up* speedPlayer * Time.deltaTime*Variables_Game.instance.player_direction;
+                    transform.position+=-transform.up* speedPlayer * Time.deltaTime;
                     Variables_Game.instance.direction_arrow=4;
                 }
 
@@ -71,7 +71,7 @@ public class PlayerMovementFly : MonoBehaviour
                     transform.position = new Vector3(transform.position.x, (float)-3, transform.position.z);
                     //ARRIBA
                     if(general_camera.transform.rotation.x < 0){
-                        transform.position+=transform.up* speedPlayer * Time.deltaTime*Variables_Game.instance.player_direction;
+                        transform.position+=transform.up* speedPlayer * Time.deltaTime;
                     }
                     
                     Variables_Game.instance.direction_arrow=4;
@@ -81,7 +81,7 @@ public class PlayerMovementFly : MonoBehaviour
                     transform.position = new Vector3(transform.position.x, (float)3, transform.position.z);
                     //ABAJO
                     if(general_camera.transform.rotation.x >= 0){
-                        transform.position+=-transform.up* speedPlayer * Time.deltaTime*Variables_Game.instance.player_direction;
+                        transform.position+=-transform.up* speedPlayer * Time.deltaTime;
                     }
                     
                     Variables_Game.instance.direction_arrow=3;
