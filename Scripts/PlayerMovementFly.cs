@@ -70,14 +70,20 @@ public class PlayerMovementFly : MonoBehaviour
                 if(transform.position.y <= -3) {
                     transform.position = new Vector3(transform.position.x, (float)-3, transform.position.z);
                     //ARRIBA
-                    transform.position+=transform.up* speedPlayer * Time.deltaTime*Variables_Game.instance.player_direction;
+                    if(general_camera.transform.rotation.x < 0){
+                        transform.position+=transform.up* speedPlayer * Time.deltaTime*Variables_Game.instance.player_direction;
+                    }
+                    
                     Variables_Game.instance.direction_arrow=4;
                     
                 //ARRIBA
                 } else if(transform.position.y >= 3) {
                     transform.position = new Vector3(transform.position.x, (float)3, transform.position.z);
                     //ABAJO
-                    transform.position+=-transform.up* speedPlayer * Time.deltaTime*Variables_Game.instance.player_direction;
+                    if(general_camera.transform.rotation.x >= 0){
+                        transform.position+=-transform.up* speedPlayer * Time.deltaTime*Variables_Game.instance.player_direction;
+                    }
+                    
                     Variables_Game.instance.direction_arrow=3;
                     
                 }

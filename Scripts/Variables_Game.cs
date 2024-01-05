@@ -14,6 +14,9 @@ public class Variables_Game : MonoBehaviour
     public ObjectTheme selectedTheme;
 
 
+    public string mode_game; //Normal or Fly 
+
+
     public GameObject player;
 
     public AudioClip music;

@@ -10,4 +10,15 @@ public class MenuController : MonoBehaviour
     {
         SceneManager.LoadScene(name_scene);
     }
+
+    public void ChangeSceneGeneral(string name_scene)
+    {
+        Variables_Game.instance.mode_game=name_scene;
+    }
+
+    public void NextSceneGeneral()
+    {
+        
+        SceneManager.LoadScene(Variables_Game.instance.mode_game);
+    }
 }

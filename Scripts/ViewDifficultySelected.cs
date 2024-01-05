@@ -21,6 +21,8 @@ public class ViewDifficultySelected : MonoBehaviour
     }
   
     void Update(){
+        /*
+
         if(difficulty_text!=Variables_Game.instance.difficulty){
             difficulty_text=Variables_Game.instance.difficulty;
             seteoColor();
@@ -44,7 +46,8 @@ public class ViewDifficultySelected : MonoBehaviour
                     buttonText.color = colorTextSelect;
                     break;
             } 
-        } 
+        }
+        */
     }
 
     void seteoColor(){
