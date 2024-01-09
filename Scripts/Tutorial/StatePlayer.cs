@@ -8,8 +8,8 @@ public class StatePlayer : MonoBehaviour
     void Start()
     {
         Variables_Game.instance.status=state;
-        
     }
+    
 
 
 }

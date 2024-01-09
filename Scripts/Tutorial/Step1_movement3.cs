@@ -14,6 +14,8 @@ public class Step1_movement3 : MonoBehaviour
     public string textoInicial;
 
     public string nuevoTexto;
+    public GameObject camara;
+
 
     void Start()
     {
@@ -21,6 +23,11 @@ public class Step1_movement3 : MonoBehaviour
         PlayerMovementFly playerScriptFly = player.GetComponent<PlayerMovementFly>();
         playerScript.enabled = false;
         playerScriptFly.enabled = true;
+
+        PositionGeneralCameraTutorial camaraScript = camara.GetComponent<PositionGeneralCameraTutorial>();
+        camaraScript.normal_mode=false;
+
+
 
 
         StartCoroutine(Texto());
