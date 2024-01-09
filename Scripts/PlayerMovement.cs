@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     //public GameObject general_camera;
     //public GameObject playerCameraController2;
     public GameObject general_camera;
-    float speedPlayer = 1.2f;
+    float speedPlayer = 1.0f;
     bool left=true;
     bool first=true;
 

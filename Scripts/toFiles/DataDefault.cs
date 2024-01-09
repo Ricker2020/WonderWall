@@ -112,26 +112,26 @@ public class DataDefault : MonoBehaviour
 
         //RECONOCE
         List<ObjectData> reconoce = new List<ObjectData>();
-        reconoce.Add(new ObjectData("Feliz", "☺"));
-        reconoce.Add(new ObjectData("Triste", "☹"));
-        reconoce.Add(new ObjectData("Escribir", "✍"));
-        reconoce.Add(new ObjectData("Avión", "✈"));
-        reconoce.Add(new ObjectData("Sombrilla", "☂"));
-        reconoce.Add(new ObjectData("Peligro", "☠"));
-        reconoce.Add(new ObjectData("Corazón", "❤"));
-        reconoce.Add(new ObjectData("Nube", "☁"));
-        reconoce.Add(new ObjectData("Sol", "☀"));
-        reconoce.Add(new ObjectData("Hombre", "♂"));
-        reconoce.Add(new ObjectData("Mujer", "♀"));
-        reconoce.Add(new ObjectData("Teléfono", "☎"));
-        reconoce.Add(new ObjectData("Carta", "✉"));
-        reconoce.Add(new ObjectData("Tijeras", "✂"));
-        reconoce.Add(new ObjectData("Lápiz", "✏"));
-        reconoce.Add(new ObjectData("Estrella", "✩"));
-        reconoce.Add(new ObjectData("Flor", "❀"));
-        reconoce.Add(new ObjectData("Música", "♫"));
-        reconoce.Add(new ObjectData("Caballo", "♞"));
-        reconoce.Add(new ObjectData("Árbol", "♧"));
+        reconoce.Add(new ObjectData("Feliz", "1☺"));
+        reconoce.Add(new ObjectData("Triste", "2☹"));
+        reconoce.Add(new ObjectData("Escribir", "3✍"));
+        reconoce.Add(new ObjectData("Avión", "4✈"));
+        reconoce.Add(new ObjectData("Sombrilla", "5☂"));
+        reconoce.Add(new ObjectData("Peligro", "6☠"));
+        reconoce.Add(new ObjectData("Corazón", "7❤"));
+        reconoce.Add(new ObjectData("Nube", "8☁"));
+        reconoce.Add(new ObjectData("Sol", "9☀"));
+        reconoce.Add(new ObjectData("Hombre", "10♂"));
+        reconoce.Add(new ObjectData("Mujer", "11♀"));
+        reconoce.Add(new ObjectData("Teléfono", "12☎"));
+        reconoce.Add(new ObjectData("Carta", "13✉"));
+        reconoce.Add(new ObjectData("Tijeras", "14✂"));
+        reconoce.Add(new ObjectData("Lápiz", "15✏"));
+        reconoce.Add(new ObjectData("Estrella", "16✩"));
+        reconoce.Add(new ObjectData("Flor", "17❀"));
+        reconoce.Add(new ObjectData("Música", "18♫"));
+        reconoce.Add(new ObjectData("Caballo", "19♞"));
+        reconoce.Add(new ObjectData("Árbol", "20♧"));
 
         ObjectDataContainer containerReconoce = new ObjectDataContainer(reconoce);
         SaveLoadData.SaveData(containerReconoce, "FilesGame/Difficulty/Easy/Questions", "reconoce");

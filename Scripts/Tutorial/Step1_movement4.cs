@@ -11,11 +11,13 @@ public class Step1_movement4 : MonoBehaviour
     public float velocidadMostrar = 20f;
     public float cooldown = 5.0f;
     public Text miTexto;
+    public string textoInicial;
+
     public string nuevoTexto;
 
     void Start()
     {
-        Variables_Game.instance.status = "Start";
+        StartCoroutine(Texto());
         Variables_Game.instance.movement_tutor = 4;
     }
 
@@ -30,6 +32,7 @@ public class Step1_movement4 : MonoBehaviour
 
     IEnumerator MostrarTexto()
     {
+        miTexto.text = "";
         for (int i = 0; i < nuevoTexto.Length; i++)
         {
             miTexto.text += nuevoTexto[i];
@@ -41,5 +44,19 @@ public class Step1_movement4 : MonoBehaviour
             nextStep.gameObject.SetActive(true);
         }
         gameObject.SetActive(false);
+    }
+
+
+    IEnumerator Texto()
+    {
+        miTexto.text = "";
+        for (int i = 0; i < textoInicial.Length; i++)
+        {
+            miTexto.text += textoInicial[i];
+            yield return new WaitForSeconds(1 / velocidadMostrar);
+        }
+
+        Variables_Game.instance.status = "Start";
+
     }
 }
