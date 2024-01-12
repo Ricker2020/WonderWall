@@ -48,15 +48,47 @@ public class Direction_Arrow : MonoBehaviour
 
     void unselected()
     {
-        arrow1_select.SetActive(false);
-        arrow2_select.SetActive(false);
-        arrow3_select.SetActive(false);
-        arrow4_select.SetActive(false);
+        if (arrow1_select)
+        {
+            arrow1_select.SetActive(false);
+        }
+        if (arrow2_select)
+        {
+            arrow2_select.SetActive(false);
+        }
+        if (arrow3_select)
+        {
+            arrow3_select.SetActive(false);
+        }
+        if (arrow4_select)
+        {
+            arrow4_select.SetActive(false);
 
-        arrow1.SetActive(true);
-        arrow2.SetActive(true);
-        arrow3.SetActive(true);
-        arrow4.SetActive(true);
+        }
+
+
+
+
+        if (arrow1)
+        {
+            arrow1.SetActive(true);
+        }
+        if (arrow2)
+        {
+            arrow2.SetActive(true);
+        }
+        if (arrow3)
+        {
+            arrow3.SetActive(true);
+        }
+        if (arrow4)
+        {
+            arrow4.SetActive(true);
+        }
+
+
+
+
 
     }
 }
