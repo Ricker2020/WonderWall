@@ -8,6 +8,7 @@ public class CollisionActionTutorial : MonoBehaviour
     public int result=1; /* 1:No Collision, 2:collision, 3:Coin*/
     public Text textResult;
     public GameObject vida;
+    public GameObject coin;
   
     private void OnTriggerEnter(Collider other){
     // Comprobar si el objeto colisionado tiene la etiqueta
@@ -28,6 +29,7 @@ public class CollisionActionTutorial : MonoBehaviour
 
             }else if(result==3){
                 textResult.text="!!!GENIAL¡¡¡ RECOGISTE UNA MONEDA";
+                coin.gameObject.SetActive(true);
             }
         }
     }
