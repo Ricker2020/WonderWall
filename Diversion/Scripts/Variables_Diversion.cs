@@ -12,7 +12,7 @@ public class Variables_Diversion : MonoBehaviour
     public string tipo_juego="";
 
     //CARRERA CONTRA EL TIEMPO
-    public double puntaje=0;
+    public double puntaje=0f;
     public double savedTime=0f;
     public int vidas_carrera=3;
     public bool eliminar_vidas=true;

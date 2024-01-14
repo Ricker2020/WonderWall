@@ -6,7 +6,6 @@ public class canvasCarrera : MonoBehaviour
 {
     public  GameObject inGame;
     public  GameObject saveScore;
-    public  GameObject afterGame;
 
     void Start()
     {
