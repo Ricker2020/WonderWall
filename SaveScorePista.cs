@@ -5,9 +5,9 @@ using System;
 using UnityEngine.UI;
 using System.Linq;
 
-public class SaveScoreCarrera : MonoBehaviour
+public class SaveScorePista : MonoBehaviour
 {
-    public Text score;
+    public Text attempt;
     public Text time;
     public Text name_player;
     public GameObject save_score;
@@ -15,12 +15,12 @@ public class SaveScoreCarrera : MonoBehaviour
 
     void Start()
     {
-        score.text = (Variables_Diversion.instance.puntaje).ToString();
+        attempt.text = (Variables_Diversion.instance.attempts).ToString();
         double tiempo = Variables_Diversion.instance.savedTime;
         int minutes = Mathf.FloorToInt((float)(tiempo / 60f));
         int seconds = Mathf.FloorToInt((float)(tiempo % 60f));
         time.text = minutes + "m::" + seconds + "s";
-        //SaveScore();
+        SaveScore();
 
     }
 
@@ -30,15 +30,9 @@ public class SaveScoreCarrera : MonoBehaviour
     {
         string name = name_player.text;
         string tipo_juego = Variables_Diversion.instance.tipo_juego;
-        /*
-        SaveLoadDataDiversion.ResetDataDefault("Diversion", "Diversion_ContraTiempo");
-        SaveLoadDataDiversion.ResetDataDefault("Diversion", "Diversion_PistaNivel1");
-        SaveLoadDataDiversion.ResetDataDefault("Diversion", "Diversion_PistaNivel2");
-        SaveLoadDataDiversion.ResetDataDefault("Diversion", "Diversion_PistaNivel3");*/
-
 
         ObjectThemeDiversion container = SaveLoadDataDiversion.LoadThemes<ObjectThemeDiversion>("Diversion", tipo_juego);
-        container.players_score.Add(new ObjectScoreDiversion(name, Variables_Diversion.instance.puntaje, Variables_Diversion.instance.savedTime));
+        container.players_score.Add(new ObjectScoreDiversion(name, Variables_Diversion.instance.attempts, Variables_Diversion.instance.savedTime)); //change score by attemps
         container.players_score = SortScores(container.players_score);
 
         SaveLoadDataDiversion.SaveData(container, "Diversion", tipo_juego);
@@ -53,7 +47,7 @@ public class SaveScoreCarrera : MonoBehaviour
 
     List<ObjectScoreDiversion> SortScores(List<ObjectScoreDiversion> scores)
     {
-        scores.Sort((x, y) => y.score.CompareTo(x.score));
+        scores.Sort((x, y) => y.time.CompareTo(x.time));
         //Keeps only 10 score elements
         if (scores.Count > 10)
         {
@@ -61,5 +55,4 @@ public class SaveScoreCarrera : MonoBehaviour
         }
         return scores;
     }
-
 }
