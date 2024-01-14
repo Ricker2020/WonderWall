@@ -20,7 +20,7 @@ public class SaveScorePista : MonoBehaviour
         int minutes = Mathf.FloorToInt((float)(tiempo / 60f));
         int seconds = Mathf.FloorToInt((float)(tiempo % 60f));
         time.text = minutes + "m::" + seconds + "s";
-        SaveScore();
+        //SaveScore();
 
     }
 

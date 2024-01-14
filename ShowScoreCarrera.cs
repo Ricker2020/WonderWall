@@ -102,6 +102,7 @@ public class ShowScoreCarrera : MonoBehaviour
 
             //RESET VALUES && DECREMENT
             scoreByPlayer = "...";
+            timeByPlayer = "...";
             nameByPlayer = "...";
             position_y -= decrement;
         }

@@ -17,7 +17,7 @@ public class DiversionMoveNivel3 : MonoBehaviour
     //PISTA - DECENSO
     float velocidadY = 1.6f;
     float velocidadZ = 4.4f;// Velocidad de movimiento
-    public Text answer;
+    //public Text answer;
     public GameObject general_camera;
     public GameObject elevator;
 
@@ -99,7 +99,7 @@ public class DiversionMoveNivel3 : MonoBehaviour
             // Rota el objeto alrededor del punto de pivote en el eje Y
             transform.RotateAround(pivotPoint, -Vector3.up, angleToRotate);
             Vector3 rotationEulerAngles = transform.rotation.eulerAngles;
-            answer.text=":"+rotationEulerAngles.x+":"+rotationEulerAngles.y+":"+rotationEulerAngles.z;
+            //answer.text=":"+rotationEulerAngles.x+":"+rotationEulerAngles.y+":"+rotationEulerAngles.z;
 
             if(rotationEulerAngles.y<270.0f ){
                 part=7;
@@ -127,7 +127,7 @@ public class DiversionMoveNivel3 : MonoBehaviour
             // Rota el objeto alrededor del punto de pivote en el eje Y
             transform.RotateAround(pivotPoint, Vector3.up, angleToRotate);
             Vector3 rotationEulerAngles = transform.rotation.eulerAngles;
-            answer.text=":"+rotationEulerAngles.x+":"+rotationEulerAngles.y+":"+rotationEulerAngles.z;
+            //answer.text=":"+rotationEulerAngles.x+":"+rotationEulerAngles.y+":"+rotationEulerAngles.z;
 
             if(rotationEulerAngles.y>359.5f ){
                 part=9;
@@ -147,6 +147,10 @@ public class DiversionMoveNivel3 : MonoBehaviour
             }
         }
 
+        if(transform.position.z>=-313 && part==10 && Variables_Diversion.instance.status=="Start"){
+            Variables_Diversion.instance.status="End";
+        }
+
         if(Variables_Diversion.instance.collision){
             Vector3 newPosition = transform.position;
             newPosition.x = 0;
@@ -160,6 +164,7 @@ public class DiversionMoveNivel3 : MonoBehaviour
             part=1;
 
             Variables_Diversion.instance.collision=false;
+            Variables_Diversion.instance.attempts+=1; //Attempts
             Variables_Diversion.instance.status="Wait";
             Invoke("cooldown_activate", 5.0f);
         }       

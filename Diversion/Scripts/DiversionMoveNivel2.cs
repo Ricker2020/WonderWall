@@ -5,11 +5,7 @@ using UnityEngine.UI;
 
 public class DiversionMoveNivel2 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+
 
     float speed = 5f;
     int part=1;
@@ -19,7 +15,7 @@ public class DiversionMoveNivel2 : MonoBehaviour
 
     
 
-    public Text answer;
+    //public Text answer;
     void Update()
     {
         
@@ -39,7 +35,7 @@ public class DiversionMoveNivel2 : MonoBehaviour
             // Rota el objeto alrededor del punto de pivote en el eje Y
             transform.RotateAround(pivotPoint,  Vector3.up, angleToRotate);
             Vector3 rotationEulerAngles = transform.rotation.eulerAngles;
-            answer.text=":"+rotationEulerAngles.x+":"+rotationEulerAngles.y+":"+rotationEulerAngles.z;
+            //answer.text=":"+rotationEulerAngles.x+":"+rotationEulerAngles.y+":"+rotationEulerAngles.z;
             
             if(rotationEulerAngles.y>90.0f ){
                 part=3;
@@ -64,7 +60,7 @@ public class DiversionMoveNivel2 : MonoBehaviour
             // Rota el objeto alrededor del punto de pivote en el eje Y
             transform.RotateAround(pivotPoint, -Vector3.up, angleToRotate);
             Vector3 rotationEulerAngles = transform.rotation.eulerAngles;
-            answer.text=":"+rotationEulerAngles.x+":"+rotationEulerAngles.y+":"+rotationEulerAngles.z;
+            //answer.text=":"+rotationEulerAngles.x+":"+rotationEulerAngles.y+":"+rotationEulerAngles.z;
             
             if(rotationEulerAngles.y>300.0f ){
                 part=5;
@@ -82,6 +78,10 @@ public class DiversionMoveNivel2 : MonoBehaviour
                 transform.position = newPosition;
             }
         }
+
+        if(transform.position.z>=-65 && part==6 && Variables_Diversion.instance.status=="Start"){
+            Variables_Diversion.instance.status="End";
+        }
         
         if(Variables_Diversion.instance.collision){
             Vector3 newPosition = transform.position;
@@ -96,6 +96,7 @@ public class DiversionMoveNivel2 : MonoBehaviour
             part=1;
 
             Variables_Diversion.instance.collision=false;
+            Variables_Diversion.instance.attempts+=1; //Attempts
             Variables_Diversion.instance.status="Wait";
             Invoke("cooldown_activate", 5.0f);
         }       
