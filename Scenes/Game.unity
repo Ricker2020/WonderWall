@@ -2525,7 +2525,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 756386232}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7110,6 +7110,7 @@ Transform:
   m_LocalScale: {x: 500, y: 500, z: 500}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1904525873}
   - {fileID: 911155348}
   - {fileID: 1177489234}
   - {fileID: 1905926075}
@@ -7186,7 +7187,7 @@ RectTransform:
   - {fileID: 989055203}
   - {fileID: 1366271255}
   m_Father: {fileID: 756386232}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8450,7 +8451,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 756386232}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8490,7 +8491,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 02334
+  m_Text: 0
 --- !u!222 &911155350
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10546,7 +10547,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 756386232}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11310,7 +11311,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 756386232}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -13034,15 +13035,8 @@ MonoBehaviour:
   score_general: {fileID: 911155349}
   combo_general: {fileID: 305684873}
   in_game: {fileID: 756386231}
-  save_score: {fileID: 2140525419}
-  after_game: {fileID: 1083896239}
-  buttonSave: {fileID: 1738423080}
-  name_player: {fileID: 818759911}
   progressBar: {fileID: 769696201}
-  positionToClone: {fileID: 1792916792}
-  scoreToClone: {fileID: 412538325}
-  nameToClone: {fileID: 480764282}
-  componentParent: {fileID: 1337260240}
+  text_score_player: {fileID: 818759911}
 --- !u!4 &1305718538
 Transform:
   m_ObjectHideFlags: 0
@@ -14083,6 +14077,7 @@ GameObject:
   - component: {fileID: 1461278437}
   - component: {fileID: 1461278436}
   - component: {fileID: 1461278440}
+  - component: {fileID: 1461278441}
   m_Layer: 5
   m_Name: CanvasGeneral
   m_TagString: Untagged
@@ -14171,7 +14166,6 @@ RectTransform:
   - {fileID: 1083896240}
   - {fileID: 646998067}
   - {fileID: 2091635357}
-  - {fileID: 1904525873}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14193,6 +14187,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 919132149579248912}
+--- !u!114 &1461278441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461278434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d6217c46b216684383988e4a63c922c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  save_score: {fileID: 2140525419}
+  after_game: {fileID: 1083896239}
+  positionToClone: {fileID: 1792916792}
+  scoreToClone: {fileID: 412538325}
+  nameToClone: {fileID: 480764282}
+  componentParent: {fileID: 1337260240}
+  name_player: {fileID: 818759911}
 --- !u!1 &1461497849
 GameObject:
   m_ObjectHideFlags: 0
@@ -15599,7 +15612,7 @@ PrefabInstance:
     - target: {fileID: 1473853310043872528, guid: b477ce247dd630546b38e2cddec3f199,
         type: 3}
       propertyPath: cantQuestions
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1473853310043872528, guid: b477ce247dd630546b38e2cddec3f199,
         type: 3}
@@ -16774,7 +16787,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1738423081}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1461278441}
+        m_TargetAssemblyTypeName: ActiveSaveScore, Assembly-CSharp
+        m_MethodName: SaveScore
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1738423081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17448,7 +17473,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 756386232}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -18003,19 +18028,19 @@ RectTransform:
   m_GameObject: {fileID: 1904525872}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.002, y: 0.002, z: 0.002}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1706794591}
   - {fileID: 2110295597}
   - {fileID: 1136528296}
   - {fileID: 662072227}
-  m_Father: {fileID: 1461278439}
-  m_RootOrder: 6
+  m_Father: {fileID: 756386232}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 597, y: 1644}
+  m_AnchoredPosition: {x: 1.1939697, y: 3.2879639}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1904525874
@@ -18069,7 +18094,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 756386232}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
