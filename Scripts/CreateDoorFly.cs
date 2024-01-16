@@ -49,9 +49,9 @@ public class CreateDoorFly : MonoBehaviour
 
     void Start()
     {
-        
-        //Variables_Game.instance.endGame=false;
-        //Variables_Game.instance.status="Start";
+        //RESET VALUES
+        Variables_Game.instance.current_score = 0;
+        Variables_Game.instance.combo_in_score = -1;
 
         cant_questions=Variables_Game.instance.cantQuestions;
 
