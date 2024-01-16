@@ -5962,7 +5962,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1113051001}
         m_TargetAssemblyTypeName: PauseInGame, Assembly-CSharp
         m_MethodName: changeState
         m_Mode: 1
@@ -15559,7 +15559,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pause: {fileID: 21300000, guid: b4fffa8ac55042e4cbee5738bfb14333, type: 3}
   play: {fileID: 21300000, guid: 11182f33754dc484a948351deae202c0, type: 3}
-  pauseMenu: {fileID: 0}
+  pauseMenu: {fileID: 1184413561}
 --- !u!1 &1113606055
 GameObject:
   m_ObjectHideFlags: 0
@@ -27684,7 +27684,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Diversion_Pista
+          m_StringArgument: Diversion_PistaNivel1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1999762338
@@ -29074,7 +29074,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1113051001}
         m_TargetAssemblyTypeName: PauseInGame, Assembly-CSharp
         m_MethodName: changeState
         m_Mode: 1

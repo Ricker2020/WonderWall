@@ -22879,7 +22879,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Diversion_Pista
+          m_StringArgument: Diversion_PistaNivel3
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1022375805
@@ -25101,7 +25101,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1683968918}
         m_TargetAssemblyTypeName: PauseInGame, Assembly-CSharp
         m_MethodName: changeState
         m_Mode: 1
@@ -29127,15 +29127,8 @@ MonoBehaviour:
   score_general: {fileID: 0}
   combo_general: {fileID: 0}
   in_game: {fileID: 0}
-  save_score: {fileID: 0}
-  after_game: {fileID: 0}
-  buttonSave: {fileID: 0}
-  name_player: {fileID: 0}
   progressBar: {fileID: 0}
-  positionToClone: {fileID: 0}
-  scoreToClone: {fileID: 0}
-  nameToClone: {fileID: 0}
-  componentParent: {fileID: 0}
+  text_score_player: {fileID: 0}
 --- !u!4 &1305718538
 Transform:
   m_ObjectHideFlags: 0
@@ -37250,7 +37243,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1683968918}
         m_TargetAssemblyTypeName: PauseInGame, Assembly-CSharp
         m_MethodName: changeState
         m_Mode: 1

@@ -4742,7 +4742,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1305718536}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -5881,7 +5881,7 @@ Transform:
   - {fileID: 275020035}
   - {fileID: 949543460}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &510001443
 GameObject:
@@ -7729,7 +7729,7 @@ PrefabInstance:
     - target: {fileID: 3309109339136657135, guid: 4a390cef0bb3b3b4ab4e2c5027b00a51,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3309109339136657135, guid: 4a390cef0bb3b3b4ab4e2c5027b00a51,
         type: 3}
@@ -7794,7 +7794,7 @@ PrefabInstance:
     - target: {fileID: 7931041389591309652, guid: 4a390cef0bb3b3b4ab4e2c5027b00a51,
         type: 3}
       propertyPath: puntaje
-      value: 12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7931041389591309652, guid: 4a390cef0bb3b3b4ab4e2c5027b00a51,
         type: 3}
@@ -7804,7 +7804,7 @@ PrefabInstance:
     - target: {fileID: 7931041389591309652, guid: 4a390cef0bb3b3b4ab4e2c5027b00a51,
         type: 3}
       propertyPath: savedTime
-      value: 233
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7931041389591309652, guid: 4a390cef0bb3b3b4ab4e2c5027b00a51,
         type: 3}
@@ -7844,7 +7844,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalScale.x
@@ -15921,65 +15921,6 @@ Transform:
   m_Father: {fileID: 361994443}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1305718536
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1305718538}
-  - component: {fileID: 1305718537}
-  m_Layer: 0
-  m_Name: CreateAndControllerGame
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1305718537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1305718536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a789e502310d28a4b90f037a21d8679a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  door: {fileID: 5031815652001653876, guid: b237ee2e50d38be458bb99eb030c98a1, type: 3}
-  size_data: 0
-  cant_questions: 0
-  score_general: {fileID: 911155349}
-  combo_general: {fileID: 0}
-  in_game: {fileID: 756386231}
-  save_score: {fileID: 2140525419}
-  after_game: {fileID: 1083896239}
-  buttonSave: {fileID: 1738423080}
-  name_player: {fileID: 818759911}
-  progressBar: {fileID: 0}
-  positionToClone: {fileID: 0}
-  scoreToClone: {fileID: 0}
-  nameToClone: {fileID: 0}
-  componentParent: {fileID: 1337260240}
---- !u!4 &1305718538
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1305718536}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1306800892
 GameObject:
   m_ObjectHideFlags: 0
@@ -18083,7 +18024,7 @@ RectTransform:
   - {fileID: 924633254}
   - {fileID: 2091635357}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -20899,7 +20840,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1675123618
 GameObject:
@@ -22954,7 +22895,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Diversion_Pista
+          m_StringArgument: Diversion_ContraTiempo
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1868381411
@@ -23422,7 +23363,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1918144849
 GameObject:
@@ -23860,7 +23801,7 @@ RectTransform:
   - {fileID: 202169172}
   - {fileID: 39825267}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -23912,7 +23853,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897607310870066, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4897607310870066, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24763,7 +24704,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2074296564
 GameObject:
