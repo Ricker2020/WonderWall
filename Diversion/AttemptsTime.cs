@@ -14,7 +14,7 @@ public class AttemptsTime : MonoBehaviour
     double tiempo;
     void Start()
     {
-        Variables_Diversion.instance.attempts = 0f;
+        Variables_Diversion.instance.attempts = 1f;
         Variables_Diversion.instance.savedTime = 0f;
     }
 

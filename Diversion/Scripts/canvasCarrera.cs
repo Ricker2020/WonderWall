@@ -6,6 +6,7 @@ public class canvasCarrera : MonoBehaviour
 {
     public  GameObject inGame;
     public  GameObject saveScore;
+    int time=0;
 
     void Start()
     {
@@ -15,9 +16,10 @@ public class canvasCarrera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Variables_Diversion.instance.status=="End"){
+        if(Variables_Diversion.instance.status=="End" && time==0){
             inGame.SetActive(false);
             saveScore.SetActive(true);
+            time=1;
         }
         
     }
