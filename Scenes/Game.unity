@@ -13036,7 +13036,7 @@ MonoBehaviour:
   combo_general: {fileID: 305684873}
   in_game: {fileID: 756386231}
   progressBar: {fileID: 769696201}
-  text_score_player: {fileID: 818759911}
+  text_score_player: {fileID: 322229841}
 --- !u!4 &1305718538
 Transform:
   m_ObjectHideFlags: 0

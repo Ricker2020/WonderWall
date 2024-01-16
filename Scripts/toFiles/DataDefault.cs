@@ -14,6 +14,7 @@ public class DataDefault : MonoBehaviour
             PlayerPrefs.SetInt("FirstInstallation", 1);
         }*/
         DataInJson();
+        DiversionJson();
     }
 
 
@@ -445,6 +446,14 @@ public class DataDefault : MonoBehaviour
 
         containerAdivinanza = new ObjectDataContainer(adivinanza);
         SaveLoadData.SaveData(containerAdivinanza, "FilesGame/Difficulty/Hard/Questions", "adivinanza");
+    }
+
+
+    void DiversionJson(){
+        SaveLoadDataDiversion.ResetDataDefault("Diversion", "Diversion_ContraTiempo");
+        SaveLoadDataDiversion.ResetDataDefault("Diversion", "Diversion_PistaNivel1");
+        SaveLoadDataDiversion.ResetDataDefault("Diversion", "Diversion_PistaNivel2");
+        SaveLoadDataDiversion.ResetDataDefault("Diversion", "Diversion_PistaNivel3");
     }
 
 

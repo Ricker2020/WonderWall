@@ -13032,7 +13032,7 @@ MonoBehaviour:
   score_general: {fileID: 911155349}
   combo_general: {fileID: 305684873}
   in_game: {fileID: 756386231}
-  text_score_player: {fileID: 818759911}
+  text_score_player: {fileID: 322229841}
   buttonSave: {fileID: 1738423080}
   name_player: {fileID: 818759911}
   progressBar: {fileID: 769696201}
