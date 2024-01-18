@@ -800,7 +800,6 @@ GameObject:
   - component: {fileID: 18883839}
   - component: {fileID: 18883838}
   - component: {fileID: 18883841}
-  - component: {fileID: 18883842}
   - component: {fileID: 18883843}
   m_Layer: 5
   m_Name: Cube (1)
@@ -864,7 +863,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 9bdc4fe6ebb67b345a53265bcd2dadbf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -909,19 +908,6 @@ MonoBehaviour:
   objeto1: {fileID: 630277861}
   objeto2: {fileID: 1753998385}
   selectJuego: Diversion_PistaNivel2
---- !u!114 &18883842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 18883835}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14c809397cb48034eaec68ce278c88a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationSpeed: 20
 --- !u!114 &18883843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -929,7 +915,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 18883835}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 212cc190b9978634eb207ccd695b384f, type: 3}
   m_Name: 
@@ -11090,7 +11076,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 46e3210785352ed42873ddc9b53e99ef, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0574f6495f914ee4ea6f583621e60fc9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -36137,7 +36123,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.367
+      value: -0.06
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalPosition.y
@@ -46892,7 +46878,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2c707663b0870c146b735b4d8ef03eac, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 539031173c3a8774b9a444f129a69c70, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -50067,7 +50053,6 @@ GameObject:
   - component: {fileID: 1350593154}
   - component: {fileID: 1350593153}
   - component: {fileID: 1350593156}
-  - component: {fileID: 1350593157}
   - component: {fileID: 1350593158}
   m_Layer: 5
   m_Name: Cube
@@ -50131,7 +50116,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 3e87d96c36c8ab640a4897c0ca0568e0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -50176,19 +50161,6 @@ MonoBehaviour:
   objeto1: {fileID: 630277861}
   objeto2: {fileID: 1753998385}
   selectJuego: Diversion_PistaNivel1
---- !u!114 &1350593157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1350593150}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14c809397cb48034eaec68ce278c88a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationSpeed: 50
 --- !u!114 &1350593158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50196,7 +50168,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1350593150}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 212cc190b9978634eb207ccd695b384f, type: 3}
   m_Name: 
@@ -62110,7 +62082,6 @@ GameObject:
   - component: {fileID: 1663484028}
   - component: {fileID: 1663484027}
   - component: {fileID: 1663484030}
-  - component: {fileID: 1663484031}
   - component: {fileID: 1663484032}
   m_Layer: 5
   m_Name: Cube (2)
@@ -62174,7 +62145,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 501cdda295b0ab847ae7a866eeff38c2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -62219,19 +62190,6 @@ MonoBehaviour:
   objeto1: {fileID: 630277861}
   objeto2: {fileID: 1753998385}
   selectJuego: Diversion_PistaNivel3
---- !u!114 &1663484031
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1663484024}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14c809397cb48034eaec68ce278c88a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationSpeed: 20
 --- !u!114 &1663484032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62239,7 +62197,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1663484024}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 212cc190b9978634eb207ccd695b384f, type: 3}
   m_Name: 
@@ -72796,14 +72754,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.29411766, g: 0.7669431, b: 0.77254903, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 46e3210785352ed42873ddc9b53e99ef, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 440e6d6dcb596d3468c9b90b25b8eec3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -75119,14 +75077,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.77254903, g: 0.62124604, b: 0.29411766, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 46e3210785352ed42873ddc9b53e99ef, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 72294b99b648da34ea12523b84d323c4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
