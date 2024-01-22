@@ -35,8 +35,8 @@ public class CreateDoor : MonoBehaviour
     public ProgressBar progressBar;
 
     //DIFFICULTY
-    float timeToCreate=13.0f; //10
-    float speed_current=2.0f;  //5
+    float timeToCreate=15.0f; //10
+    float speed_current=1.5f;  //5
 
 
     public Text text_score_player;
@@ -101,7 +101,7 @@ public class CreateDoor : MonoBehaviour
                 speed_current=speed_current*1.6f;
                 break;
             case "x2.00":
-                timeToCreate=timeToCreate*0.6f;
+                timeToCreate=timeToCreate*0.7f;
                 speed_current=speed_current*1.8f;
                 break;
         }

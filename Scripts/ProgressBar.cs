@@ -11,7 +11,7 @@ public class ProgressBar : MonoBehaviour
     public void UpdateProgressBar(float currentValue, float maxValue){
         float percentage=currentValue/maxValue;
         bar.value=percentage;
-        progressText.text=(percentage*100)+"%";
+        progressText.text=(percentage*100).ToString("F2") +"%";
 
     }
 

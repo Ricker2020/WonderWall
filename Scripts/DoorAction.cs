@@ -68,10 +68,16 @@ public class DoorAction : MonoBehaviour
         }
         answer2.text=partes[0];
 
+/*
         Vector3 escala = new Vector3(4f, 4f, 4f);
         if(Variables_Game.instance.selectedTheme.title=="reconoce"){
             answer1.rectTransform.localScale = escala;
             answer2.rectTransform.localScale  = escala;
+        }
+*/
+        if(Variables_Game.instance.selectedTheme.title=="reconoce"){
+            answer1.fontSize  = 800;
+            answer2.fontSize   = 800;
         }
 
         image = background_feedback.GetComponent<Image>();

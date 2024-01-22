@@ -25,6 +25,10 @@ public class ActiveSaveScore : MonoBehaviour
     string scoreByPlayer = "...";
     string nameByPlayer = "...";
 
+
+
+
+
     bool first_time=true;
 
 
@@ -58,6 +62,8 @@ public class ActiveSaveScore : MonoBehaviour
         //RESET VALUES
         Variables_Game.instance.current_score = 0;
         Variables_Game.instance.combo_in_score = -1;
+
+   
 
 
         save_score.SetActive(false);
