@@ -4604,6 +4604,7 @@ GameObject:
   - component: {fileID: 420860975}
   - component: {fileID: 420860976}
   - component: {fileID: 420860977}
+  - component: {fileID: 420860978}
   m_Layer: 5
   m_Name: Message
   m_TagString: Untagged
@@ -4664,6 +4665,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: End
+--- !u!114 &420860978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420860974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 873787400dc25f1448607622e981b262, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement: 0
 --- !u!1 &424076225
 GameObject:
   m_ObjectHideFlags: 0
@@ -13657,6 +13671,7 @@ GameObject:
   - component: {fileID: 1210029895}
   - component: {fileID: 1210029896}
   - component: {fileID: 1210029897}
+  - component: {fileID: 1210029898}
   m_Layer: 5
   m_Name: 1
   m_TagString: Untagged
@@ -13722,6 +13737,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stateObject: {fileID: 832343682}
   state: 1
+--- !u!114 &1210029898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210029894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 873787400dc25f1448607622e981b262, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement: 1
 --- !u!1 &1218668861
 GameObject:
   m_ObjectHideFlags: 0
@@ -17210,6 +17238,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1475873178}
   - component: {fileID: 1475873179}
+  - component: {fileID: 1475873180}
   m_Layer: 5
   m_Name: Start
   m_TagString: Untagged
@@ -17254,6 +17283,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: End
+--- !u!114 &1475873180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475873177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 873787400dc25f1448607622e981b262, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement: 0
 --- !u!1 &1478259815
 GameObject:
   m_ObjectHideFlags: 0
@@ -20416,6 +20458,7 @@ GameObject:
   - component: {fileID: 1710275875}
   - component: {fileID: 1710275876}
   - component: {fileID: 1710275877}
+  - component: {fileID: 1710275878}
   m_Layer: 5
   m_Name: 3
   m_TagString: Untagged
@@ -20497,6 +20540,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stateObject: {fileID: 832343682}
   state: 0
+--- !u!114 &1710275878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710275873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 873787400dc25f1448607622e981b262, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement: 3
 --- !u!1 &1712184834
 GameObject:
   m_ObjectHideFlags: 0
@@ -20538,6 +20594,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1714791766}
   - component: {fileID: 1714791767}
+  - component: {fileID: 1714791768}
   m_Layer: 5
   m_Name: 4
   m_TagString: Untagged
@@ -20589,6 +20646,19 @@ MonoBehaviour:
   text_answer: La respuesta esta a la Abajo
   nextStep: {fileID: 1475873177}
   typeGameFly: 1
+--- !u!114 &1714791768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714791765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 873787400dc25f1448607622e981b262, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement: 4
 --- !u!1 &1723614945
 GameObject:
   m_ObjectHideFlags: 0
@@ -24293,6 +24363,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2114258986}
   - component: {fileID: 2114258987}
+  - component: {fileID: 2114258988}
   m_Layer: 5
   m_Name: 2
   m_TagString: Untagged
@@ -24344,6 +24415,19 @@ MonoBehaviour:
   text_answer: La respuesta esta a la Derecha
   nextStep: {fileID: 420860974}
   typeGameFly: 0
+--- !u!114 &2114258988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114258985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 873787400dc25f1448607622e981b262, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement: 2
 --- !u!1 &2118591602
 GameObject:
   m_ObjectHideFlags: 0

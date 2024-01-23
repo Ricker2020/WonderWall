@@ -25,6 +25,7 @@ public class Step1_movement4 : MonoBehaviour
     {
         if (player.transform.position.y < 0.05 && Variables_Game.instance.status == "Start")
         {
+            Variables_Game.instance.movement_tutor = 0;
             Variables_Game.instance.status = "Wait";
             StartCoroutine(MostrarTexto());
         }
