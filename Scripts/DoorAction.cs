@@ -88,7 +88,7 @@ public class DoorAction : MonoBehaviour
     {
         transform.position += -transform.forward * speed * Time.deltaTime;
 
-        if (transform.position.z < -5.0)
+        if (transform.position.z < -10.0)
         {
             Destroy (gameObject);
         }

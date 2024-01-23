@@ -58,7 +58,7 @@ public class PositionGeneralCameraFly : MonoBehaviour
     {
         if(Variables_Game.instance.opcion_camera==0){
             //Change the position of the camera to that of the model - First Person
-            transform.position=new Vector3(transform.position.x,player.transform.position.y, transform.position.z);
+            transform.position=new Vector3(transform.position.x,player.transform.position.y, player.transform.position.z);
 
         }else{
             //Third Person
