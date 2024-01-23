@@ -18,14 +18,15 @@ public class DataDefault : MonoBehaviour
     }
 
 
-    void DataInJson(){
+    void DataInJson()
+    {
         //PARA CADA TEMA EASY
         List<ObjectTheme> themes_easy = new List<ObjectTheme>();
-        themes_easy.Add(new ObjectTheme("inglés","inglés",new List<ObjectScore>()));
-        themes_easy.Add(new ObjectTheme("matemáticas","matemáticas",new List<ObjectScore>()));
-        themes_easy.Add(new ObjectTheme("romanos","romanos",new List<ObjectScore>()));
-        themes_easy.Add(new ObjectTheme("reconoce","reconoce",new List<ObjectScore>()));
-        themes_easy.Add(new ObjectTheme("adivinanzas","adivinanzas",new List<ObjectScore>()));
+        themes_easy.Add(new ObjectTheme("inglés", "inglés", "Preguntas de números y colores", new List<ObjectScore>()));
+        themes_easy.Add(new ObjectTheme("matemáticas", "matemáticas", "Preguntas para elegir números", new List<ObjectScore>()));
+        themes_easy.Add(new ObjectTheme("romanos", "romanos", "Preguntas para escoger números romanos básicos", new List<ObjectScore>()));
+        themes_easy.Add(new ObjectTheme("reconoce", "reconoce", "Preguntas para tomar la imagen que representa el texto", new List<ObjectScore>()));
+        themes_easy.Add(new ObjectTheme("adivinanzas", "adivinanzas", "Preguntas para elegir la respuesta que se parece al color", new List<ObjectScore>()));
 
         ObjectThemeContainer containerEasy = new ObjectThemeContainer(themes_easy);
         SaveLoadData.SaveData(containerEasy, "FilesGame/Difficulty/Easy", "themesEasy");
@@ -156,29 +157,13 @@ public class DataDefault : MonoBehaviour
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         //PARA CADA TEMA MEDIUM
-        List<ObjectTheme> themes_medium = new List<ObjectTheme>();        
-        themes_medium.Add(new ObjectTheme("inglés","inglés",new List<ObjectScore>()));
-        themes_medium.Add(new ObjectTheme("matemáticas","matemáticas",new List<ObjectScore>()));
-        themes_medium.Add(new ObjectTheme("romanos","romanos",new List<ObjectScore>()));
-        themes_medium.Add(new ObjectTheme("reconoce","reconoce",new List<ObjectScore>()));
-        themes_medium.Add(new ObjectTheme("adivinanzas","adivinanzas",new List<ObjectScore>()));
+        List<ObjectTheme> themes_medium = new List<ObjectTheme>();
+        themes_medium.Add(new ObjectTheme("inglés", "inglés", "Preguntas de animales, ropa y días de la semana", new List<ObjectScore>()));
+        themes_medium.Add(new ObjectTheme("matemáticas", "matemáticas", "Preguntas de sumas y restas", new List<ObjectScore>()));
+        themes_medium.Add(new ObjectTheme("romanos", "romanos", "Preguntas de números romanos complicados", new List<ObjectScore>()));
+        themes_medium.Add(new ObjectTheme("reconoce", "reconoce", "Preguntas para tomar la letra que falta según la imagen", new List<ObjectScore>()));
+        themes_medium.Add(new ObjectTheme("adivinanzas", "adivinanzas", "Adivinanzas simples", new List<ObjectScore>()));
         ObjectThemeContainer containerMedium = new ObjectThemeContainer(themes_medium);
         SaveLoadData.SaveData(containerMedium, "FilesGame/Difficulty/Medium", "themesMedium");
 
@@ -327,20 +312,18 @@ public class DataDefault : MonoBehaviour
 
 
 
-
         //PARA CADA TEMA HARD
         List<ObjectTheme> themes_hard = new List<ObjectTheme>();
-        themes_hard.Add(new ObjectTheme("inglés","inglés",new List<ObjectScore>()));
-        themes_hard.Add(new ObjectTheme("matemáticas","matemáticas",new List<ObjectScore>()));
-        themes_hard.Add(new ObjectTheme("romanos","romanos",new List<ObjectScore>()));
-        //themes_hard.Add(new ObjectTheme("reconoce","reconoce",new List<ObjectScore>()));
-        themes_hard.Add(new ObjectTheme("adivinanzas","adivinanzas",new List<ObjectScore>()));
+        themes_hard.Add(new ObjectTheme("inglés", "inglés", "Preguntas de frases en inglés", new List<ObjectScore>()));
+        themes_hard.Add(new ObjectTheme("matemáticas", "matemáticas", "Preguntas de suma, resta, multiplicación y división", new List<ObjectScore>()));
+        themes_hard.Add(new ObjectTheme("romanos", "romanos", "Preguntas para escoger números romanos dificiles", new List<ObjectScore>()));
+        themes_hard.Add(new ObjectTheme("adivinanzas", "adivinanzas", "Adivinanzas dificiles", new List<ObjectScore>()));
         ObjectThemeContainer containerHard = new ObjectThemeContainer(themes_hard);
         SaveLoadData.SaveData(containerHard, "FilesGame/Difficulty/Hard", "themesHard");
 
         //INGLES
         ingles = new List<ObjectData>();
-        ingles.Add(new ObjectData("I am","Yo soy"));
+        ingles.Add(new ObjectData("I am", "Yo soy"));
         ingles.Add(new ObjectData("Hello", "Hola"));
         ingles.Add(new ObjectData("Good morning", "Buenos días"));
         ingles.Add(new ObjectData("Good night", "Buenas noches"));
@@ -362,15 +345,15 @@ public class DataDefault : MonoBehaviour
         ingles.Add(new ObjectData("I have a red ball", "Tengo una pelota roja"));
         ingles.Add(new ObjectData("The sun is shining", "El sol está brillando"));
 
-        containerIngles= new ObjectDataContainer(ingles);
+        containerIngles = new ObjectDataContainer(ingles);
         SaveLoadData.SaveData(containerIngles, "FilesGame/Difficulty/Hard/Questions", "inglés");
 
         //MATEMATICAS
         matematicas = new List<ObjectData>();
-        matematicas.Add(new ObjectData("1 x (2 x 4)","8"));        
-        matematicas.Add(new ObjectData("5 + 8 - 1","12"));
-        matematicas.Add(new ObjectData("(3 x 4) + 2","14"));
-        matematicas.Add(new ObjectData("9 + 9 -1","17"));
+        matematicas.Add(new ObjectData("1 x (2 x 4)", "8"));
+        matematicas.Add(new ObjectData("5 + 8 - 1", "12"));
+        matematicas.Add(new ObjectData("(3 x 4) + 2", "14"));
+        matematicas.Add(new ObjectData("9 + 9 -1", "17"));
         matematicas.Add(new ObjectData("3 + 5 + 2", "10"));
         matematicas.Add(new ObjectData("8 - 4 + 1", "5"));
         matematicas.Add(new ObjectData("(2 x 3) + 5", "11"));
@@ -389,39 +372,39 @@ public class DataDefault : MonoBehaviour
 
         //ROMANOS
         romanos = new List<ObjectData>();
-        romanos.Add(new ObjectData("LII","52"));   
-        romanos.Add(new ObjectData("C","100"));   
-        romanos.Add(new ObjectData("CL","150"));   
-        romanos.Add(new ObjectData("D","500"));   
-        romanos.Add(new ObjectData("DL","550"));   
-        romanos.Add(new ObjectData("M","1000"));   
-        romanos.Add(new ObjectData("MD","1500"));   
-        romanos.Add(new ObjectData("MDLV","1555"));   
-        romanos.Add(new ObjectData("CXX","120"));
-        romanos.Add(new ObjectData("CC","200"));
-        romanos.Add(new ObjectData("DCCC","800"));
-        romanos.Add(new ObjectData("MCC","1200"));
-        romanos.Add(new ObjectData("MDC","1600"));
-        romanos.Add(new ObjectData("DCCC","800"));
-        romanos.Add(new ObjectData("CM","900"));
-        romanos.Add(new ObjectData("MCML","1950"));
-        romanos.Add(new ObjectData("MM","2000"));
-        romanos.Add(new ObjectData("MMCC","2200"));
-        romanos.Add(new ObjectData("MMDC","2600"));
-        romanos.Add(new ObjectData("MDLX","1560"));
-        romanos.Add(new ObjectData("CD","400"));
-        romanos.Add(new ObjectData("DCC","700"));
-        romanos.Add(new ObjectData("CMXC","990"));
-        romanos.Add(new ObjectData("MCM","1900"));
-        romanos.Add(new ObjectData("MMCM","2900"));
-        romanos.Add(new ObjectData("MMM","3000"));
+        romanos.Add(new ObjectData("LII", "52"));
+        romanos.Add(new ObjectData("C", "100"));
+        romanos.Add(new ObjectData("CL", "150"));
+        romanos.Add(new ObjectData("D", "500"));
+        romanos.Add(new ObjectData("DL", "550"));
+        romanos.Add(new ObjectData("M", "1000"));
+        romanos.Add(new ObjectData("MD", "1500"));
+        romanos.Add(new ObjectData("MDLV", "1555"));
+        romanos.Add(new ObjectData("CXX", "120"));
+        romanos.Add(new ObjectData("CC", "200"));
+        romanos.Add(new ObjectData("DCCC", "800"));
+        romanos.Add(new ObjectData("MCC", "1200"));
+        romanos.Add(new ObjectData("MDC", "1600"));
+        romanos.Add(new ObjectData("DCCC", "800"));
+        romanos.Add(new ObjectData("CM", "900"));
+        romanos.Add(new ObjectData("MCML", "1950"));
+        romanos.Add(new ObjectData("MM", "2000"));
+        romanos.Add(new ObjectData("MMCC", "2200"));
+        romanos.Add(new ObjectData("MMDC", "2600"));
+        romanos.Add(new ObjectData("MDLX", "1560"));
+        romanos.Add(new ObjectData("CD", "400"));
+        romanos.Add(new ObjectData("DCC", "700"));
+        romanos.Add(new ObjectData("CMXC", "990"));
+        romanos.Add(new ObjectData("MCM", "1900"));
+        romanos.Add(new ObjectData("MMCM", "2900"));
+        romanos.Add(new ObjectData("MMM", "3000"));
 
         containerRomanos = new ObjectDataContainer(romanos);
         SaveLoadData.SaveData(containerRomanos, "FilesGame/Difficulty/Hard/Questions", "romanos");
 
 
 
-        
+
         //ADIVINANZAS
         adivinanza = new List<ObjectData>();
         adivinanza.Add(new ObjectData("Soy redonda como una pelota, pero no rebotas.", "La Luna"));
@@ -449,7 +432,8 @@ public class DataDefault : MonoBehaviour
     }
 
 
-    void DiversionJson(){
+    void DiversionJson()
+    {
         SaveLoadDataDiversion.ResetDataDefault("Diversion", "Diversion_ContraTiempo");
         SaveLoadDataDiversion.ResetDataDefault("Diversion", "Diversion_PistaNivel1");
         SaveLoadDataDiversion.ResetDataDefault("Diversion", "Diversion_PistaNivel2");
