@@ -29,29 +29,7 @@ public class PositionGeneralCameraTutorial : MonoBehaviour
         }
         else
         {
-            //Third Person
-            switch (Variables_Game.instance.player_model)
-            {
-                case "BÚHO":
-                    model_owl.SetActive(true);
-                    break;
-                case "PATO":
-                    model_duck.SetActive(true);
-                    break;
-                case "CAPIBARA":
-                    model_capybara.SetActive(true);
-                    break;
-                case "HUMANO":
-                    model_human.SetActive(true);
-                    break;
-                case "ROBOT":
-                    model_robot.SetActive(true);
-                    break;
-                case "PROENIX":
-                    model_proenix.SetActive(true);
-                    break;
-            }
-
+            model_owl.SetActive(true);
         }
 
 

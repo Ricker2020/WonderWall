@@ -12,7 +12,7 @@ public class ScaleTutorialTutor : MonoBehaviour
     public GameObject nextStep;
 
 
-    float increment = 0.001f;
+    public float increment = 0.001f;
 
     void Start()
     {
