@@ -13,6 +13,11 @@ public class OptionsTheme : MonoBehaviour
 
     bool reload=true;
 
+
+    //Create
+    public Text name_theme; 
+    public Text description_theme;
+
     void Start(){
         ShowTheme();
     }
@@ -36,14 +41,14 @@ public class OptionsTheme : MonoBehaviour
     }
 
 
-    public void CreateTheme(Text name_theme){
+    public void CreateTheme(){
         string nameFile=NameFile(name_theme.text);
         string difficulty=Variables_Game.instance.difficulty;
         ObjectThemeContainer container = SaveLoadData.LoadThemes<ObjectThemeContainer>("FilesGame/Difficulty/"+difficulty, "themes"+difficulty);
 
         view.SetActive(true);
         if(CheckUnique(container.dataList, nameFile)){
-            container.dataList.Add(new ObjectTheme(name_theme.text,nameFile,new List<ObjectScore>()));
+            container.dataList.Add(new ObjectTheme(name_theme.text,nameFile, "DESCRIPTION",new List<ObjectScore>())); //
             SaveLoadData.SaveData(container, "FilesGame/Difficulty/"+difficulty, "themes"+difficulty);
 
             //EMPTY FILE
