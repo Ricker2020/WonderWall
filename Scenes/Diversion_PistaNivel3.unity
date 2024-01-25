@@ -14201,7 +14201,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 843382465}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.34, y: 0, z: 9.45}
+  m_LocalPosition: {x: 0.34, y: 0, z: 35.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -18582,9 +18582,9 @@ MonoBehaviour:
   coin1: {fileID: 2080150204}
   coin2: {fileID: 1509848390}
   coin3: {fileID: 1950939974}
-  moneda1: {fileID: 0}
-  moneda2: {fileID: 0}
-  moneda3: {fileID: 0}
+  moneda1: {fileID: 843382465}
+  moneda2: {fileID: 1858355689}
+  moneda3: {fileID: 1940456287}
 --- !u!1 &1088116943
 GameObject:
   m_ObjectHideFlags: 0
@@ -33269,7 +33269,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1858355689}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.34, y: 0, z: 11.08}
+  m_LocalPosition: {x: 0.34, y: -7.55, z: 228.94}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -34454,7 +34454,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1940456287}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.34, y: 0, z: 12.98}
+  m_LocalPosition: {x: 49.77, y: -6.84, z: 296.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
