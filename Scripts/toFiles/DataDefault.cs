@@ -152,7 +152,7 @@ public class DataDefault : MonoBehaviour
         adivinanza.Add(new ObjectData("Adivina el color;#800080", "Morado;#800080"));
 
         ObjectDataContainer containerAdivinanza = new ObjectDataContainer(adivinanza);
-        SaveLoadData.SaveData(containerAdivinanza, "FilesGame/Difficulty/Easy/Questions", "adivinanza");
+        SaveLoadData.SaveData(containerAdivinanza, "FilesGame/Difficulty/Easy/Questions", "adivinanzas");
 
 
 
@@ -291,7 +291,7 @@ public class DataDefault : MonoBehaviour
         adivinanza.Add(new ObjectData("Siempre lo vas al amanecer y brilla en el cielo", "Sol"));
 
         containerAdivinanza = new ObjectDataContainer(adivinanza);
-        SaveLoadData.SaveData(containerAdivinanza, "FilesGame/Difficulty/Medium/Questions", "adivinanza");
+        SaveLoadData.SaveData(containerAdivinanza, "FilesGame/Difficulty/Medium/Questions", "adivinanzas");
 
 
 
@@ -428,7 +428,7 @@ public class DataDefault : MonoBehaviour
         adivinanza.Add(new ObjectData("Tiene orejas pero no puede oír, tiene boca pero no puede hablar.", "Una taza"));
 
         containerAdivinanza = new ObjectDataContainer(adivinanza);
-        SaveLoadData.SaveData(containerAdivinanza, "FilesGame/Difficulty/Hard/Questions", "adivinanza");
+        SaveLoadData.SaveData(containerAdivinanza, "FilesGame/Difficulty/Hard/Questions", "adivinanzas");
     }
 
 

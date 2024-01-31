@@ -48,7 +48,7 @@ public class OptionsTheme : MonoBehaviour
 
         view.SetActive(true);
         if(CheckUnique(container.dataList, nameFile)){
-            container.dataList.Add(new ObjectTheme(name_theme.text,nameFile, "DESCRIPTION",new List<ObjectScore>())); //
+            container.dataList.Add(new ObjectTheme(name_theme.text,nameFile, description_theme.text  ,new List<ObjectScore>())); //
             SaveLoadData.SaveData(container, "FilesGame/Difficulty/"+difficulty, "themes"+difficulty);
 
             //EMPTY FILE

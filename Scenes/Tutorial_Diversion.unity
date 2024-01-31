@@ -24122,8 +24122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16a8f946705a56f41aa8d08adf81364a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nuevoTexto: "Sobrevive el mayor tiempo posible sin perder todas tus vidas mientras
-    esquivas los obst\xE1culos."
+  nuevoTexto: "Sobrevive sin perder todas tus vidas mientras esquivas los obst\xE1culos."
   nextStep: {fileID: 64519732}
   velocidadMostrar: 20
   cooldown: 5

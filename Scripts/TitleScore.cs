@@ -22,7 +22,7 @@ public class TitleScore : MonoBehaviour
                 break;
         }
 
-        title.text = "Dificultad ("+dificultad+") Tema(" +Variables_Game.instance.selectedTheme.title+")";
+        title.text = "Dificultad ("+dificultad+") Tema (" +Variables_Game.instance.selectedTheme.title+")";
 
 
     }

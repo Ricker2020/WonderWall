@@ -19,7 +19,7 @@ public class ActiveSaveScore : MonoBehaviour
     public Text name_player;
 
     int numClones = 10;
-    int position_y = 1380;
+    int position_y = 1105;
     int decrement = 190;
     string positionByPlayer = "...";
     string scoreByPlayer = "...";
