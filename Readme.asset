@@ -1,34 +1,33 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
-  m_Name: Readme
-  m_EditorClassIdentifier: 
-  icon: {fileID: 2800000, guid: 727a75301c3d24613a3ebcec4a24c2c8, type: 3}
-  title: URP Empty Template
-  sections:
-  - heading: Welcome to the Universal Render Pipeline
-    text: This template includes the settings and assets you need to start creating with the Universal Render Pipeline.
-    linkText: 
-    url:
-  - heading: URP Documentation
-    text:
-    linkText: Read more about URP
-    url: https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest
-  - heading: Forums
-    text:
-    linkText: Get answers and support
-    url: https://forum.unity.com/forums/universal-render-pipeline.383/
-  - heading: Report bugs
-    text:
-    linkText: Submit a report
-    url: https://unity3d.com/unity/qa/bug-reporting
-  loadedLayout: 1
+Título del juego 
+
+El título seleccionado para el videojuego es “Wonder Wall”. 
+
+Autores 
+
+Enrique Piedra 
+
+Alejandro Izurieta 
+
+Descripción del juego 
+
+Videojuego 3D con animaciones y personajes divertidos que se mueven siguiendo el movimiento de la cabeza.  Diviértete con los 2 modos de juego: "Aprendizaje" y "Diversión", cada una con escenarios únicos. En el modo "Aprendizaje", desafiarás tus conocimientos sobre diversas temáticas al seleccionar las respuestas correctas y acumular más puntos. Por otro lado, en el modo "Diversión", la tarea consistirá en esquivar obstáculos, recolectar monedas y alcanzar la meta. 
+
+Proceso de desarrollo 
+
+Un equipo de expertos en el tema y desarrolladores se unió para llevar a cabo la realización del proyecto. Se optó por la metodología iPlus para la obtención de los requisitos, mientras que el desarrollo del videojuego se basó en el Modelo de Ciclo de Vida de Interacción Simple, que permite adaptaciones continuas y la implementación de mejoras. Además, se integraron elementos de gamificación y se aplicaron las heurísticas de Nielsen para garantizar una experiencia agradable y fácil de usar para el jugador. 
+
+Tecnología utilizada 
+
+Dado el entorno 3D, se optó por utilizar Unity como plataforma de desarrollo para el videojuego, haciendo uso del lenguaje de programación C#. Además, se incorporaron modelos 3D y movimientos. 
+
+Manuales y guías 
+
+En primer lugar, situar al jugador en una zona segura donde pueda jugar sin chocar con objetos. Aunque no se realicen movimientos bruscos, se recomienda estar sentado. 
+
+Luego, colocarse el casco y comenzar el juego. 
+
+Crear una partida con todas las configuraciones deseadas por el jugador. 
+
+Realizar el tutorial para que el jugador comprenda cómo jugar (los movimientos se realizan con la cabeza). 
+
+Iniciar el juego e intentar conseguir un buen puntaje.  
