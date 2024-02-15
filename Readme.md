@@ -33,3 +33,6 @@ Dado el entorno 3D, se optó por utilizar Unity como plataforma de desarrollo pa
 5. Iniciar el juego e intentar conseguir un buen puntaje.
 
 ¡Disfruta de *Wonder Wall* y sumérgete en una experiencia de juego única!
+
+## Créditos
+Wonder Wall © 2024 by Enrique Piedra && Alejandro Izurieta is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1">CC BY-NC 4.0 </a>
