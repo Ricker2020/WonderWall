@@ -36,3 +36,13 @@ Dado el entorno 3D, se optó por utilizar Unity como plataforma de desarrollo pa
 
 ## Créditos
 Wonder Wall © 2024 by Enrique Piedra && Alejandro Izurieta is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1">CC BY-NC 4.0 </a>
+
+
+## Ambiente
+Obtener el código:
+```
+git clone https://github.com/Ricker2020/WonderWall.git
+```
+Cambiar el contenido de la carpeta Assets de Unity con el código
+
+
